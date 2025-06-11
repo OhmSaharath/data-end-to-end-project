@@ -4,7 +4,7 @@ This repository contains real-world end-to-end data engineering projects using *
 
 ## 🔽 Projects
 
-### 🔹 [Project 1: Bitcoin Price Ingestion using Airflow](./project_1_airflow_bitcoin)
+### 🔹 [Project 1: Bitcoin Price Ingestion using Airflow](./airflow_bitcoin)
 Extract Bitcoin price data from public API and load into PostgreSQL via Airflow DAG.
 
 ### 🔹 [Project 2: CSV Ingestion to Cloud SQL](./project_2_csv_to_cloudsql)
