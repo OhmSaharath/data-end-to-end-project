@@ -21,7 +21,7 @@ This guide describes how to set up a Google Cloud Platform (GCP) VM instance to 
 
 | Setting            | Value                      |
 |--------------------|----------------------------|
-| Name               | `data-eng-vm`              |
+| Name               | `data-eng-vm-project`      |
 | Region             | `asia-southeast1-b`        |
 | Machine type       | `e2-micro` (2 vCPUs, 1 GB Memory)|
 | Boot disk          | Ubuntu 22.04 LTS           |
@@ -34,4 +34,4 @@ This guide describes how to set up a Google Cloud Platform (GCP) VM instance to 
 ## 🔑 Step 2: SSH into the VM
 
 ```bash
-gcloud compute ssh data-eng-vm --zone=asia-southeast1-b
+gcloud compute ssh data-eng-vm-project --zone=asia-southeast1-b
