@@ -1,34 +1,24 @@
-# 🧠 Data Engineering Projects Collection  
-## 🚀 End-to-End Data Pipeline with Airflow, Docker, and GCP
+# 🧠 Data Engineering Projects Collection
 
-Build an automated data pipeline using **Apache Airflow**, **Docker**, and **Google Cloud Platform (GCP)**  
-to extract public API data, transform it with Python, and load it into **Cloud SQL** for analytics and dashboarding.
+This repository contains real-world end-to-end data engineering projects using **Apache Airflow**, **Docker**, and **Google Cloud Platform**.
+
+## 🔽 Projects
+
+### 🔹 [Project 1: Bitcoin Price Ingestion using Airflow](./project_1_airflow_bitcoin)
+Extract Bitcoin price data from public API and load into PostgreSQL via Airflow DAG.
+
+### 🔹 [Project 2: CSV Ingestion to Cloud SQL](./project_2_csv_to_cloudsql)
+Automate uploading local CSV files into Cloud SQL using Python and Airflow.
+
+### 🔹 [Project 3: Real-Time Data with Kafka and Spark](./project_3_streaming_kafka)
+Stream real-time messages from Kafka to Spark Structured Streaming and visualize.
 
 ---
 
-### 🔧 Stack Used
+## 📦 Tech Stack
 - Apache Airflow 2.8+
-- Docker + Docker Compose
+- Docker / Docker Compose
+- PostgreSQL, Cloud SQL
 - Python 3.8+
-- Google Cloud (Compute Engine, Cloud SQL, Cloud Storage)
-- PostgreSQL or MSSQL
-- Looker Studio (Dashboard)
-
----
-
-### 📌 Project Goals
-- [x] Automate data ingestion from public APIs
-- [x] Run DAGs using Airflow on Docker in GCP VM
-- [x] Store data in Cloud SQL
-- [x] Optional: Visualize with Looker Studio / Google Sheets
-
----
-
-### 📂 Folder Structure
-```plaintext
-.
-├── dags/                # All Airflow DAGs
-├── docker-compose.yaml  # Services: Airflow, Postgres
-├── requirements.txt     # Python dependencies
-├── setup/               # Shell scripts / config for GCP
-├── README.md
+- GCP (Compute Engine, Cloud Storage)
+- Optional: Apache Kafka, Spark, Looker Studio
