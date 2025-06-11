@@ -35,3 +35,25 @@ This guide describes how to set up a Google Cloud Platform (GCP) VM instance to 
 
 ```bash
 gcloud compute ssh data-eng-vm-project --zone=asia-southeast1-b
+```
+
+## 🐳 Setup Instructions
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/OhmSaharath/project_1_airflow_bitcoin.git
+cd project_1_airflow_bitcoin
+
+docker-compose up --build -d
+
+docker exec -it project_1_airflow_bitcoin_webserver_1 airflow db init
+
+docker exec -it project_1_airflow_bitcoin_webserver_1 airflow users create \
+  --username admin \
+  --firstname Admin \
+  --lastname User \
+  --role Admin \
+  --email admin@example.com \
+  --password admin
+```
