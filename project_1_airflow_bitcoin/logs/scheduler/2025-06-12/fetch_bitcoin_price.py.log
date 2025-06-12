@@ -1,0 +1,46 @@
+[2025-06-12T12:28:09.986+0000] {processor.py:161} INFO - Started process (PID=22) to work on /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:28:09.993+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_bitcoin_price.py for tasks to queue
+[2025-06-12T12:28:09.994+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:28:09.994+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:28:10.045+0000] {processor.py:840} INFO - DAG(s) 'fetch_bitcoin_price' retrieved from /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:28:10.484+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:28:10.483+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:fetch_bitcoin_price
+[2025-06-12T12:28:10.498+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:28:10.498+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:fetch_bitcoin_price
+[2025-06-12T12:28:10.507+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:28:10.506+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:fetch_bitcoin_price
+[2025-06-12T12:28:10.507+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:28:10.507+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-06-12T12:28:10.525+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:28:10.525+0000] {dag.py:3058} INFO - Creating ORM DAG for fetch_bitcoin_price
+[2025-06-12T12:28:10.543+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:28:10.543+0000] {dag.py:3823} INFO - Setting next_dagrun for fetch_bitcoin_price to 2025-06-12 11:00:00+00:00, run_after=2025-06-12 12:00:00+00:00
+[2025-06-12T12:28:10.571+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_bitcoin_price.py took 0.596 seconds
+[2025-06-12T12:28:40.741+0000] {processor.py:161} INFO - Started process (PID=23) to work on /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:28:40.742+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_bitcoin_price.py for tasks to queue
+[2025-06-12T12:28:40.743+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:28:40.742+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:28:40.757+0000] {processor.py:840} INFO - DAG(s) 'fetch_bitcoin_price' retrieved from /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:28:40.793+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:28:40.793+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-06-12T12:28:40.853+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:28:40.853+0000] {dag.py:3823} INFO - Setting next_dagrun for fetch_bitcoin_price to 2025-06-12 11:00:00+00:00, run_after=2025-06-12 12:00:00+00:00
+[2025-06-12T12:28:40.889+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_bitcoin_price.py took 0.152 seconds
+[2025-06-12T12:29:11.066+0000] {processor.py:161} INFO - Started process (PID=24) to work on /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:29:11.071+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_bitcoin_price.py for tasks to queue
+[2025-06-12T12:29:11.073+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:29:11.072+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:29:11.089+0000] {processor.py:840} INFO - DAG(s) 'fetch_bitcoin_price' retrieved from /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:29:11.144+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:29:11.144+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-06-12T12:29:11.191+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:29:11.191+0000] {dag.py:3823} INFO - Setting next_dagrun for fetch_bitcoin_price to 2025-06-12 11:00:00+00:00, run_after=2025-06-12 12:00:00+00:00
+[2025-06-12T12:29:11.222+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_bitcoin_price.py took 0.161 seconds
+[2025-06-12T12:29:41.387+0000] {processor.py:161} INFO - Started process (PID=25) to work on /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:29:41.389+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_bitcoin_price.py for tasks to queue
+[2025-06-12T12:29:41.390+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:29:41.389+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:29:41.403+0000] {processor.py:840} INFO - DAG(s) 'fetch_bitcoin_price' retrieved from /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:29:41.462+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:29:41.461+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-06-12T12:29:41.506+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:29:41.506+0000] {dag.py:3823} INFO - Setting next_dagrun for fetch_bitcoin_price to 2025-06-12 12:00:00+00:00, run_after=2025-06-12 13:00:00+00:00
+[2025-06-12T12:29:41.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_bitcoin_price.py took 0.146 seconds
+[2025-06-12T12:30:11.691+0000] {processor.py:161} INFO - Started process (PID=26) to work on /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:30:11.691+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_bitcoin_price.py for tasks to queue
+[2025-06-12T12:30:11.692+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:30:11.692+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:30:11.706+0000] {processor.py:840} INFO - DAG(s) 'fetch_bitcoin_price' retrieved from /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:30:11.735+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:30:11.735+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-06-12T12:30:11.761+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:30:11.761+0000] {dag.py:3823} INFO - Setting next_dagrun for fetch_bitcoin_price to 2025-06-12 12:00:00+00:00, run_after=2025-06-12 13:00:00+00:00
+[2025-06-12T12:30:11.784+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_bitcoin_price.py took 0.098 seconds
+[2025-06-12T12:30:41.846+0000] {processor.py:161} INFO - Started process (PID=27) to work on /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:30:41.849+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetch_bitcoin_price.py for tasks to queue
+[2025-06-12T12:30:41.851+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:30:41.851+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:30:41.867+0000] {processor.py:840} INFO - DAG(s) 'fetch_bitcoin_price' retrieved from /opt/airflow/dags/fetch_bitcoin_price.py
+[2025-06-12T12:30:41.899+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:30:41.898+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-06-12T12:30:41.930+0000] {logging_mixin.py:188} INFO - [2025-06-12T12:30:41.929+0000] {dag.py:3823} INFO - Setting next_dagrun for fetch_bitcoin_price to 2025-06-12 12:00:00+00:00, run_after=2025-06-12 13:00:00+00:00
+[2025-06-12T12:30:41.954+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetch_bitcoin_price.py took 0.112 seconds

@@ -1,28 +1,30 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
-from datetime import datetime
+from datetime import datetime, timedelta
 import requests
-import pandas as pd
+import json
+
+default_args = {
+    'owner': 'airflow',
+    'retries': 1,
+    'retry_delay': timedelta(minutes=3)
+}
 
 def fetch_bitcoin_price():
-    url = "https://api.coindesk.com/v1/bpi/currentprice.json"
+    url = 'https://api.coindesk.com/v1/bpi/currentprice.json'
     response = requests.get(url)
     data = response.json()
-    price = data["bpi"]["USD"]["rate_float"]
-    time = data["time"]["updatedISO"]
-
-    df = pd.DataFrame([{"timestamp": time, "usd_price": price}])
-    df.to_csv("/opt/airflow/dags/bitcoin_price.csv", index=False)
-    print("Bitcoin price saved.")
+    print(json.dumps(data, indent=2))  # log only for now
 
 with DAG(
-    dag_id="fetch_bitcoin_price",
-    start_date=datetime(2024, 1, 1),
-    schedule_interval="@daily",
+    dag_id='fetch_bitcoin_price',
+    default_args=default_args,
+    description='Fetch current Bitcoin price from API',
+    schedule_interval='@hourly',
+    start_date=datetime(2025, 6, 11),
     catchup=False,
-    tags=["bitcoin", "api"],
 ) as dag:
-    fetch_task = PythonOperator(
-        task_id="fetch_price",
+    task1 = PythonOperator(
+        task_id='get_bitcoin_price',
         python_callable=fetch_bitcoin_price
     )
