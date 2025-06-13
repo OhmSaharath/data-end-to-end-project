@@ -60,7 +60,7 @@ sudo usermod -aG docker $USER
 ## 🎶 Step 3: Airflow
 
 1. Let's create "Airflow" folder.
-2. Go to "Airflow" folder.
+2. Go to "Airflow"(You can change a name of folder) folder.
 ```bash
 # go to path "Airflow"
 cd Airflow
@@ -83,13 +83,32 @@ docker ps
 ```
 ### You should be see all text.
 ```bash
-CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS                    PORTS                              NAMES
-247ebe6cf87a   apache/airflow:3.0.2   "/usr/bin/dumb-init …"   3 minutes ago    Up 3 minutes (healthy)    8080/tcp                           compose_airflow-worker_1
-ed9b09fc84b1   apache/airflow:3.0.2   "/usr/bin/dumb-init …"   3 minutes ago    Up 3 minutes (healthy)    8080/tcp                           compose_airflow-scheduler_1
-7cb1fb603a98   apache/airflow:3.0.2   "/usr/bin/dumb-init …"   3 minutes ago    Up 3 minutes (healthy)    0.0.0.0:8080->8080/tcp             compose_airflow-api_server_1
-74f3bbe506eb   postgres:13            "docker-entrypoint.s…"   18 minutes ago   Up 17 minutes (healthy)   5432/tcp                           compose_postgres_1
-0bd6576d23cb   redis:latest           "docker-entrypoint.s…"   10 hours ago     Up 17 minutes (healthy)   0.0.0.0:6379->6379/tcp             compose_redis_1
+CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS                    PORTS                                         NAMES
+8998b72a7018   apache/airflow:2.8.2   "/usr/bin/dumb-init …"   40 minutes ago   Up 40 minutes (healthy)   8080/tcp                                      airflow-282-airflow-triggerer-1
+ade215024c70   apache/airflow:2.8.2   "/usr/bin/dumb-init …"   40 minutes ago   Up 40 minutes (healthy)   0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp   airflow-282-airflow-webserver-1
+26dac849853e   apache/airflow:2.8.2   "/usr/bin/dumb-init …"   40 minutes ago   Up 40 minutes (healthy)   8080/tcp                                      airflow-282-airflow-worker-1
+34d1be8a090e   apache/airflow:2.8.2   "/usr/bin/dumb-init …"   40 minutes ago   Up 40 minutes (healthy)   8080/tcp                                      airflow-282-airflow-scheduler-1
+dd008978ceb9   postgres:13            "docker-entrypoint.s…"   40 minutes ago   Up 40 minutes (healthy)   5432/tcp                                      airflow-282-postgres-1
+675cca046001   redis:latest           "docker-entrypoint.s…"   40 minutes ago   Up 40 minutes (healthy)   6379/tcp                                      airflow-282-redis-1
 ```
 ### After docker run
-Let's go to http://<EXTERNAL_ID>:8080
+Let's go to ```http://<EXTERNAL_ID>:8080```
 You'll see UI interface of airflow.
+
+## 😎 Step 4: Create user airflow.
+1. let's run this command for bash.
+```bash
+docker exec -it <container-name> bash
+```
+2. You can see container-name from ```docker ps``` in last column.
+3. After run, You can use "airflow" command.
+```bash
+# create an admin user
+# You can change info from this.
+airflow users create \
+    --username admin \
+    --firstname Peter \
+    --lastname Parker \
+    --role Admin \
+    --email spiderman@superhero.org
+```
