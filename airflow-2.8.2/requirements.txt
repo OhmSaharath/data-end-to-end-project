@@ -1,0 +1,2 @@
+# บอกว่าเราต้องการ package อะไรบ้าง
+apache-airflow-providers-google
