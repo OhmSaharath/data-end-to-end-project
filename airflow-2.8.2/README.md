@@ -17,7 +17,8 @@
 | External IP        | Ephemeral (or Static if needed) |
 | IP forwarding      | ❌ Off (can change later)  |
 
-4. Let's create firewalls rule for port 8080.
+4. Let's create firewalls rule for port 8080:
+
 | Setting              | Value              |
 |----------------------|--------------------|
 | name-rules           | allow-airflow-8080 |
