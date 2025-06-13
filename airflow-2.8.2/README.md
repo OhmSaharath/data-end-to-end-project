@@ -59,11 +59,14 @@ sudo usermod -aG docker $USER
 ```
 ## 🎶 Step 3: Airflow
 
-1. Let's create "Airflow" folder.
-2. Go to "Airflow"(You can change a name of folder) folder.
+1. Let's create "Airflow"(You can change a name of folder) folder.
+```bash
+mkdir airflow-2.8.2
+```
+2. Go to "airflow-2.8.2" folder.
 ```bash
 # go to path "Airflow"
-cd Airflow
+cd airflow-2.8.2
 
 # Linux User
 mkdir -p ./dags ./logs ./plugins ./config
@@ -112,3 +115,29 @@ airflow users create \
     --role Admin \
     --email spiderman@superhero.org
 ```
+4. If you need save logs when you `docker compose down`.
+```bash
+volumes:
+  postgres-db-volume:
+  airflow-logs: # This line is important because if you don't have this line. When you `docker compose down` all config ex. USER will lost after down docker. You'll need to save this logs for when you start docker again.
+```
+5. If you need to close example.
+```bash
+# Let's go to path airflow folder.
+cd airflow-2.8.2
+
+# check file
+ls -la
+
+# Let's edit file docker-compose.yaml
+nano docker-compose.yaml
+```
+### Let's find 
+```bash
+# Change from 'true' to 'false'
+environment:
+....................
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+....................
+```
+
