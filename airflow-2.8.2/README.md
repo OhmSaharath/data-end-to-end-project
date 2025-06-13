@@ -18,7 +18,8 @@
 | IP forwarding      | ❌ Off (can change later)  |
 
 4. Let's create firewalls rule for port 8080.
-```bash
+| Setting              | Value              |
+|----------------------|--------------------|
 | name-rules           | allow-airflow-8080 |
 | logs                 | off                |
 | Network              | default            |
@@ -28,8 +29,8 @@
 | IPv4 ranges          | 0.0.0.0/0          |
 | Protocols and ports  | TCP, 8080          |
 
-# Let's create global
-```
+5. Let's create global
+
 
 ## 🐳 Step 2: Install docker
 ### Reference : https://docs.docker.com/engine/install/debian/
