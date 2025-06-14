@@ -13,7 +13,7 @@ from src.db.postgres_loader import load_data
 @dag(
     dag_id="coingecko_production_pipeline",
     schedule="*/10 * * * *",
-    start_date=pendulum.datetime(2025, 6, 14, tz="Asia/Bangkok"), # ตั้งเป็นวันที่ในอดีต
+    start_date=pendulum.datetime(2025, 6, 15, tz="Asia/Bangkok"), # ตั้งเป็นวันที่ในอดีต
     catchup=False,
     tags=["production", "coingecko"],
 )
