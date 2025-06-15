@@ -17,8 +17,7 @@
 | External IP        | Ephemeral (or Static if needed) |
 | IP forwarding      | ❌ Off (can change later)  |
 
-4. Let's create firewalls rule for port 8080.
-4. Let's create firewalls rule for port 8080:
+4. Let's create firewalls rule for port 8080 and 5432.
 
 | Setting              | Value              |
 |----------------------|--------------------|
@@ -30,6 +29,17 @@
 | Action on match      | Allow              |
 | IPv4 ranges          | 0.0.0.0/0          |
 | Protocols and ports  | TCP, 8080          |
+
+| Setting              | Value              |
+|----------------------|--------------------|
+| name-rules           | allow-postgres-5432 |
+| logs                 | off                |
+| Network              | default            |
+| Priority             | 1000               |
+| Direction of traffic | ingress            |
+| Action on match      | Allow              |
+| IPv4 ranges          | 0.0.0.0/0          |
+| Protocols and ports  | TCP, 5432          |
 
 5. Let's create global
 
